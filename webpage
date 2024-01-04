@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSCS Networking Course - Marist College</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #555;
+            padding: 0.5em;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 20px;
+            display: none;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Add CSS for the logo */
+        #logo {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Add the logo image here -->
+        <img id="logo" src="https://clipchamp.com/watch/uk1rMtfRl3R" alt="Logo">
+        <h1>MSCS Networking Course - Marist College</h1>
+    </header>
+
+    <nav>
+        <a onclick="showSection('introduction-video')">Introduction Video</a>
+        <a onclick="showSection('course-details')">Course Details</a>
+        <a onclick="showSection('video-lecture')">Video Lecture</a>
+        <a onclick="showSection('lab-assignments')">Lab Assignments</a>
+        <a onclick="showSection('resources')">Resources</a>
+        <a onclick="showSection('contact')">Contact</a>
+        <a onclick="showSection('about-us')">About Us</a>
+    </nav>
+
+    <section id="introduction-video">
+        <h2>Introduction Video</h2>
+        <!-- Add introduction video content and link here -->
+    </section>
+
+    <section id="course-details">
+        <h2>Course Details</h2>
+        <p>This section provides information about the MSCS Networking Course at Marist College.</p>
+        <!-- Add basic course details here -->
+    </section>
+
+    <section id="video-lecture">
+        <h2>Video Lecture</h2>
+        <!-- Add video lecture content and links here -->
+    </section>
+
+    <section id="lab-assignments">
+        <h2>Lab Assignments</h2>
+
+        <h3>Lab 1</h3>
+        <a href="http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file1.html">Lab 1 Link</a>
+
+        <h3>Lab 2</h3>
+        <p>(i) <a href="http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file1.html">Lab 2 (i) Link</a></p>
+        <p>(ii) <a href="http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file2.html">Lab 2 (ii) Link</a></p>
+        <p>(iii) <a href="http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file3.html">Lab 2 (iii) Link</a></p>
+        <p>(iv) <a href="http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file4.html">Lab 2 (iv) Link</a></p>
+
+        <h3>Lab 3</h3>
+        <a href="http://gaia.cs.umass.edu/wireshark-labs/TCP-wireshark-file1.html">Lab 3 Link</a>
+        <p>Download: <a href="http://gaia.cs.umass.edu/wiresharklabs/alice.txt">Alice.txt</a></p>
+
+        <h3>Lab 4</h3>
+        <p>Download: <a href="https://shannngithub.github.io/Networking1/">Lab 4 Download Link</a></p>
+        <p>Upload: <a href="https://networkingmscs.netlify.app">Lab 4 Upload Link</a></p>
+    </section>
+
+    <section id="resources">
+        <h2>Resources</h2>
+        <!-- Add resources content and links here -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <!-- Add contact information here -->
+    </section>
+
+    <section id="about-us">
+        <h2>About Us</h2>
+        <!-- Add information about the course instructors or the department here -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MSCS Networking Course - Marist College</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>
